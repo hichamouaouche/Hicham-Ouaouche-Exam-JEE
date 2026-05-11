@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "app.jwt.secret",
+      "type": "java.lang.String",
+      "description": "JWT signing secret used by the exam backend."
+    },
+    {
+      "name": "app.jwt.expiration-ms",
+      "type": "java.lang.Long",
+      "description": "JWT validity duration in milliseconds."
+    },
+    {
+      "name": "spring.h2.console.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enables the embedded H2 console."
+    },
+    {
+      "name": "spring.h2.console.path",
+      "type": "java.lang.String",
+      "description": "Path of the embedded H2 console."
+    }
+  ]
+}

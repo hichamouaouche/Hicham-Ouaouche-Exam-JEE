@@ -1,6 +1,8 @@
 package org.sid.backendhichamouaouche.dtos;
 
+import org.sid.backendhichamouaouche.enums.Role;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,17 +12,14 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AgencyRequest {
+public class RegisterRequest {
 
     @NotBlank
-    private String name;
+    private String username;
 
     @NotBlank
-    private String address;
+    private String password;
 
-    @NotBlank
-    private String city;
-
-    @NotBlank
-    private String phone;
+    @NotNull
+    private Role role;
 }

@@ -39,5 +39,6 @@ public class AppUser {
     @Column(nullable = false)
     private Role role;
 
+    @Builder.Default
     private boolean enabled = true;
 }

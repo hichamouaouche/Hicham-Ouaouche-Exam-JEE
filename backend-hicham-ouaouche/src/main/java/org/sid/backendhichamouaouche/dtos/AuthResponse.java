@@ -1,6 +1,6 @@
 package org.sid.backendhichamouaouche.dtos;
 
-import jakarta.validation.constraints.NotBlank;
+import org.sid.backendhichamouaouche.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,11 +10,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AuthRequest {
+public class AuthResponse {
 
-    @NotBlank
+    private String token;
     private String username;
-
-    @NotBlank
-    private String password;
+    private Role role;
 }
